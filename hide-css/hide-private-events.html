@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Hide Events</title>
+        <style>
+        .event {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+          padding: 10px;
+        }
+        </style>
+        </head>
+<body>
+
+
+<h2> Here's My Calendar</h2>
+
+<div class="event">Puppies for Paul Picnic</div>
+<div class="event"> Porpoises Praising  Paul</div>
+<div class="event"> Cats Claw for Paul (Private)</div>
+<div class="event"> Putters for Paul Miniature Putt Putt Contest</div>
+<div class="event"> Pickling for Paul (Private)</div>
+
+
+<script>
+const collection = document.getElementsByClassName("event");
+for (let i = 0; i < collection.length; i++) {
+    event = collection[i];
+    if (event.innerHTML.includes( "(Private)" ) ) {
+        event.remove();
+    };
+};
+ </script>
+</body>
+</html>
