@@ -1,0 +1,5 @@
+To try out:
+
+_config.yml
+
+theme: minima
